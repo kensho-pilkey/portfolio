@@ -133,7 +133,7 @@ import {
     "Co-Founded and assisted in the management of a student-run cryptocurrency investment fund.",
     "In charge of testing various trading strategies, trading bots, and deep learning price prediction models using 3Commas’s paper trading feature.",
     "Outsourced the development of a LSTM Cryptocurrency price prediction model trained using data from 8 different coins on CoinMarketCap.",
-    "Participating in code reviews and providing constructive feedback to other developers.",
+    "Achieved a 63% price forecast accuracy and 51% higher returns than the buy and hold strategy over a 10 week period.",
     ],
     },
     {
@@ -161,35 +161,10 @@ import {
     ],
     },
     ];
-    const testimonials = [
-    {
-    testimonial:
-    "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-    testimonial:
-    "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-    testimonial:
-    "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-    ];
+    
     const projects = [
     {
-    name: "Car Rent",
+    name: "Vacation Home Finder",
     description:
     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -210,7 +185,7 @@ import {
     source_code_link: "https://github.com/",
     },
     {
-    name: "Job IT",
+    name: "Cyber Crusade",
     description:
     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -231,20 +206,20 @@ import {
     source_code_link: "https://github.com/",
     },
     {
-    name: "Trip Guide",
+    name: "Business Dashboard",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "A comprehensive web application that displays several KPI's via numbers and graphs. Project was part of BRASA-Hack 2024 Hackathon.",
     tags: [
     {
-    name: "nextjs",
+    name: "css",
     color: "blue-text-gradient",
     },
     {
-    name: "supabase",
+    name: "python",
     color: "green-text-gradient",
     },
     {
-    name: "css",
+    name: "streamlit",
     color: "pink-text-gradient",
     },
     ],
@@ -252,4 +227,4 @@ import {
     source_code_link: "https://github.com/",
     },
     ];
-    export { services, technologies, experiences, testimonials, projects};
+    export { services, technologies, experiences, projects};
