@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -56,7 +56,52 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
+const ScrollingDot = ({ timelineRef }) => {
+  const { scrollYProgress } = useScroll(
+    {
+      target: timelineRef,
+      offset: ["start end", "end start"]
+    }
+  );
+  const [yPosition, setYPosition] = useState(0);
+  const dotRef = useRef(null);
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (timelineRef.current && dotRef.current) {
+        const timelineRect = timelineRef.current.getBoundingClientRect();
+        const scrollProgress = scrollYProgress.get();
+        
+        const newY = scrollProgress * (timelineRect.height - dotRef.current.offsetHeight);
+        
+        setYPosition(newY);
+      }
+    };
+
+    const unsubscribe = scrollYProgress.onChange(updatePosition);
+    window.addEventListener('resize', updatePosition);
+    
+    return () => {
+      unsubscribe();
+      window.removeEventListener('resize', updatePosition);
+    };
+  }, [scrollYProgress, timelineRef]);
+
+  return (
+    <motion.div
+      ref={dotRef}
+      className="absolute left-1/2 w-6 h-6 bg-blue-500 rounded-full transform -translate-x-1/2"
+      style={{
+        top: yPosition,
+        zIndex: 10,
+      }}
+    />
+  );
+};
+
 const Experience = () => {
+  const timelineRef = useRef(null);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -68,7 +113,8 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-20 flex flex-col relative' ref={timelineRef}>
+        <ScrollingDot timelineRef={timelineRef} />
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
