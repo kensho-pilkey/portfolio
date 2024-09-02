@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
         </div>
         <div className='flex-shrink-0 mt-5 md:mt-0 ml-0 md:ml-[200px]'>
-          <img src='src/assets/headshot.png' alt='headshot' className='w-[350px] h-[350px] rounded-full border-4 border-blue-500 object-cover'/>
+          <img src={headshot} alt='headshot' className='w-[350px] h-[350px] rounded-full border-4 border-blue-500 object-cover'/>
         </div>
       </div>
       
