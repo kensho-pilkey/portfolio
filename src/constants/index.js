@@ -44,15 +44,15 @@ import {
     icon: web,
     },
     {
-    title: "React Native Developer",
+    title: "Game Developer",
     icon: mobile,
     },
     {
-    title: "Backend Developer",
+    title: "Musician",
     icon: backend,
     },
     {
-    title: "Content Creator",
+    title: "Cat Enthusiast",
     icon: creator,
     },
     ];
@@ -166,44 +166,40 @@ import {
     {
     name: "Vacation Home Finder",
     description:
-    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "A vacation home finding platform that offers curated recommendations for popular destinations based on filters and user preferences.",
     tags: [
     {
-    name: "react",
+    name: "HTML",
     color: "blue-text-gradient",
     },
     {
-    name: "mongodb",
+    name: "Javascript",
     color: "green-text-gradient",
     },
     {
-    name: "tailwind",
+    name: "Bootstrap CSS",
     color: "pink-text-gradient",
     },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
     },
     {
     name: "Cyber Crusade",
     description:
-    "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "Save your computer from a vicious computer virus in this thrilling 2D platoformer style game. Features a tutorial, 4 different levels, and a final boss fight.",
     tags: [
     {
-    name: "react",
+    name: "Gdscript",
     color: "blue-text-gradient",
     },
     {
-    name: "restapi",
+    name: "Godot Engine",
     color: "green-text-gradient",
-    },
-    {
-    name: "scss",
-    color: "pink-text-gradient",
     },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://kenshop.itch.io/cyber-crusade/",
     },
     {
     name: "Business Dashboard",
@@ -224,7 +220,7 @@ import {
     },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rmharp/HackBRASA/",
     },
     ];
     export { services, technologies, experiences, projects};
