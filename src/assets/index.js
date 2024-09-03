@@ -24,7 +24,7 @@ import threejs from "./tech/threejs.svg";
 import sharry from "./company/sharry.png";
 import cryptoDrive from "./company/cryptoDrive.png";
 import global_tech from "./company/global_tech.png";
-import tesla from "./company/tesla.png";
+import maxam from "./company/maxam.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -55,7 +55,7 @@ export {
   sharry,
   cryptoDrive,
   global_tech,
-  tesla,
+  maxam,
   carrent,
   jobit,
   tripguide,

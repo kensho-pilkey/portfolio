@@ -17,7 +17,7 @@ import {
     docker,
     sharry,
     global_tech,
-    tesla,
+    maxam,
     cryptoDrive,
     carrent,
     jobit,
@@ -141,7 +141,7 @@ import {
     {
     title: "AI Integration Specialist",
     company_name: "Maxam Hotels",
-    icon: cryptoDrive,
+    icon: maxam,
     iconBg: "#E6DEDD",
     date: "May 2024 - Jun 2024",
     points: [
