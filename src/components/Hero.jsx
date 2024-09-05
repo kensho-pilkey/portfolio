@@ -1,8 +1,10 @@
-import { motion } from 'framer-motion'
-import { styles } from '../styles'
-import { AstronautCanvas } from './canvas'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { AstronautCanvas } from './canvas';
 import { SectionWrapper } from "../hoc";
 import headshot from '../assets/headshot.png';
+import resume from '../assets/KPResume.pdf';
 
 const Hero = () => {
   return (
@@ -13,6 +15,16 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop 2D video games <br className='sm:block hidden'/> and web applications.
           </p>
+          {/* Download Resume Button */}
+          <motion.a
+            href={resume}
+            download
+            className='mt-4 inline-block px-6 py-3 rounded-lg bg-[#0073e6] text-white font-bold shadow-lg transition-transform duration-300 hover:bg-[#005bb5] hover:shadow-[0_0_20px_2px] hover:shadow-blue-400/50'
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Download Resume
+          </motion.a>
         </div>
         <div className='flex-shrink-0 mt-5 md:mt-0 ml-0 md:ml-[200px] z-10'>
           <img src={headshot} alt='headshot' className='w-[350px] h-[350px] rounded-full border-4 border-blue-500 object-cover'/>
@@ -39,7 +51,7 @@ const Hero = () => {
 
       <AstronautCanvas />
     </section>
-  )
-}
+  );
+};
 
 export default SectionWrapper(Hero, "");
