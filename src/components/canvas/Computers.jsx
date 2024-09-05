@@ -18,11 +18,11 @@ const Astronaut = ({ isMobile }) => {
       let newPos = position.clone().add(direction.current.clone().multiplyScalar(delta));
 
       // Bounce off the edges
-      if (newPos.x > 2 || newPos.x < -2) direction.current.x *= -1;
-      if (newPos.y > 1 || newPos.y < -1) direction.current.y *= -1;
+      if (newPos.x > 2.5 || newPos.x < -2.5) direction.current.x *= -1;
+      if (newPos.y > 1.25 || newPos.y < -1.25) direction.current.y *= -1;
 
-      newPos.x = Math.max(-2, Math.min(2, newPos.x));
-      newPos.y = Math.max(-1, Math.min(1, newPos.y));
+      newPos.x = Math.max(-2.5, Math.min(2.5, newPos.x));
+      newPos.y = Math.max(-1.25, Math.min(1.25, newPos.y));
 
       setPosition(newPos);
     }
