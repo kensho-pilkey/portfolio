@@ -98,35 +98,35 @@ const Contact = () => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-white text-[24px]" />
-              <p className="text-secondary">contact@yourwebsite.com</p>
+              <p className="text-secondary">pilkeykensho@gmail.com</p>
             </div>
             <div className="flex items-center gap-4">
               <FaPhoneAlt className="text-white text-[24px]" />
-              <p className="text-secondary">+1 (123) 456-7890</p>
+              <p className="text-secondary">+1 (910) 593-2679</p>
             </div>
             <div className="flex items-center gap-4">
               <FaMapMarkerAlt className="text-white text-[24px]" />
-              <p className="text-secondary">New York City, NY</p>
+              <p className="text-secondary">Chapel Hill, NC</p>
             </div>
           </div>
 
           <h4 className="text-white font-medium text-[18px] mt-8 mb-4">Follow Me</h4>
           <div className="flex flex-col gap-4">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
+            <a href="https://github.com/kensho-pilkey" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
               <FaGithub className="text-[24px]" />
               <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
+            <a href="https://linkedin.com/in/kensho-pilkey" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
               <FaLinkedin className="text-[24px]" />
               <span>LinkedIn</span>
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300">
               <FaTwitter className="text-[24px]" />
               <span>Twitter</span>
             </a>
           </div>
 
-          <p className="text-secondary mt-8 text-center">
+          <p className="text-secondary mt-8 text-left">
             Feel free to reach out through any of these channels. I'm always excited to connect!
           </p>
         </motion.div>

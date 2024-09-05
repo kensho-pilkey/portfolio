@@ -60,50 +60,74 @@ import {
     {
     name: "HTML 5",
     icon: html,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "CSS 3",
     icon: css,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "JavaScript",
     icon: javascript,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "TypeScript",
     icon: typescript,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "React JS",
     icon: reactjs,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "Redux Toolkit",
     icon: redux,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "Tailwind CSS",
     icon: tailwind,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "Node JS",
     icon: nodejs,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "Three JS",
     icon: threejs,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "git",
     icon: git,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "figma",
     icon: figma,
+    mastery: 5,
+    time: 3,
     },
     {
     name: "docker",
     icon: docker,
+    mastery: 5,
+    time: 3,
     },
     ];
     const experiences = [
