@@ -226,6 +226,40 @@ import {
     source_code_link: "https://kenshop.itch.io/cyber-crusade/",
     },
     {
+    name: "Chains of Chance",
+    description:
+    "Strategic one vs one card game that involves deception, chance, and a unique deck of cards. Entry to the Fall 2024 UNC Game Jam. (Waiting on placements)",
+    tags: [
+    {
+    name: "C# & .NET",
+    color: "blue-text-gradient",
+    },
+    {
+    name: "Godot Engine",
+    color: "green-text-gradient",
+    },
+    ],
+    image: "src/assets/chainz.png",
+    source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
+    },
+    {
+        name: "Disease Trend Web App",
+        description:
+        "1st Place Entry to the 2024 Carolina Data Challenge Health Science track. This application provides insights into influenza, pneumonia, and COVID-19 trends & travel restrictions across the United States from 2020 to 2023.",
+        tags: [
+        {
+        name: "Python",
+        color: "green-text-gradient",
+        },
+        {
+        name: "Streamlit",
+        color: "blue-text-gradient",
+        },
+        ],
+        image: "src/assets/CDSEE.png",
+        source_code_link: "https://github.com/kensho-pilkey/CDC",
+    },
+    {
     name: "Business Dashboard",
     description:
     "A comprehensive web application that displays several KPI's via numbers and graphs. Project was part of BRASA-Hack 2024 Hackathon.",
@@ -246,5 +280,30 @@ import {
     image: tripguide,
     source_code_link: "https://github.com/rmharp/HackBRASA/",
     },
+    {
+        name: "Cat Breed Identifier",
+        description:
+        "A computer vision Python application that identifies cats and their breed within a photo or live video. Fine tuned ResNet50 on a dataset of 7,000 labeled cat breeds.",
+        tags: [
+        {
+        name: "Numpy",
+        color: "blue-text-gradient",
+        },
+        {
+        name: "python",
+        color: "green-text-gradient",
+        },
+        {
+        name: "Pytorch",
+        color: "pink-text-gradient",
+        },
+        {
+        name: "OpenCV",
+        color: "red-text-gradient",
+        },
+        ],
+        image: "src/assets/catBreedApp.png",
+        source_code_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
+        },
     ];
     export { services, technologies, experiences, projects};
