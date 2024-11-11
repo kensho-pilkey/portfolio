@@ -32,6 +32,7 @@ import tripguide from "./tripguide.png";
 import chainz from "./chainz.png";
 import CDSEE from "./CDSEE.png";
 import catBreedApp from "./catBreedApp.png";
+import akari from "./akari.png";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   chainz,
   CDSEE,
   catBreedApp,
+  akari,
 };

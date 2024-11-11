@@ -26,15 +26,16 @@ import {
     catBreedApp,
     CDSEE,
     chainz,
+    akari,
     } from "../assets";
     export const navLinks = [
     {
-    id: "about",
-    title: "About",
+    id: "home",
+    title: "Home",
     },
     {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
     },
     {
     id: "contact",
@@ -209,7 +210,8 @@ import {
     },
     ],
     image: carrent,
-    source_code_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
+    source_code_link: "https://github.com/kensho-pilkey/Vacation-Home-Finder",
+    project_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
     },
     {
     name: "Cyber Crusade",
@@ -226,7 +228,8 @@ import {
     },
     ],
     image: jobit,
-    source_code_link: "https://kenshop.itch.io/cyber-crusade/",
+    source_code_link: "https://github.com/kensho-pilkey/CyberCrusade",
+    project_link: "https://kenshop.itch.io/cyber-crusade/",
     },
     {
     name: "Chains of Chance",
@@ -244,11 +247,12 @@ import {
     ],
     image: chainz,
     source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
+    project_link: "https://kenshop.itch.io/chainsofchance",
     },
     {
         name: "Disease Trend Web App",
         description:
-        "1st Place Entry to the 2024 Carolina Data Challenge Health Science track. This application provides insights into influenza, pneumonia, and COVID-19 trends & travel restrictions across the United States from 2020 to 2023.",
+        "1st Place - 2024 Carolina Data Challenge Health Science track. This application provides insights into airborne disease trends across the United States from 2020 to 2023.",
         tags: [
         {
         name: "Python",
@@ -258,14 +262,23 @@ import {
         name: "Streamlit",
         color: "blue-text-gradient",
         },
+        {
+        name: "Numpy",
+        color: "pink-text-gradient",
+        },
+        {
+        name: "Plotly",
+        color: "red-text-gradient",
+        },
         ],
         image: CDSEE,
         source_code_link: "https://github.com/kensho-pilkey/CDC",
+        project_link: "https://cdc2024.streamlit.app/",
     },
     {
     name: "Business Dashboard",
     description:
-    "A comprehensive web application that displays several KPI's via numbers and graphs. Project was part of BRASA-Hack 2024 Hackathon.",
+    "Displays several KPI's via numbers and graphs. Entry to the BRASA-Hack 2024 Hackathon. (For LiveDemo Username: 9132021237731236867 Password: stoneco)",
     tags: [
     {
     name: "css",
@@ -281,7 +294,8 @@ import {
     },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/rmharp/HackBRASA/",
+    source_code_link: "https://github.com/rmharp/HackBRASADeploy",
+    project_link: "https://hackbrasa.streamlit.app/",
     },
     {
         name: "Cat Breed Identifier",
@@ -307,6 +321,29 @@ import {
         ],
         image: catBreedApp,
         source_code_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
+        project_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
+        },
+        {
+        name: "Akari Light Up Game",
+        description:
+        "Recreation of the classic Akari Light up game using the Model View Controller Architecture. Includes 5 different levels with varying difficulty.",
+        tags: [
+        {
+        name: "Maven",
+        color: "blue-text-gradient",
+        },
+        {
+        name: "JavaFX",
+        color: "green-text-gradient",
+        },
+        {
+        name: "Java",
+        color: "pink-text-gradient",
+        },
+        ],
+        image: akari,
+        source_code_link: "https://github.com/kensho-pilkey/Akari",
+        project_link: "https://github.com/kensho-pilkey/Akari",
         },
     ];
     export { services, technologies, experiences, projects};
