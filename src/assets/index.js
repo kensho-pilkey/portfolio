@@ -29,6 +29,9 @@ import maxam from "./company/maxam.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import chainz from "./chainz.png";
+import CDSEE from "./CDSEE.png";
+import catBreedApp from "./catBreedApp.png";
 
 export {
   logo,
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  chainz,
+  CDSEE,
+  catBreedApp,
 };

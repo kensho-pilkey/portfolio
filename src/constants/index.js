@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    catBreedApp,
+    CDSEE,
+    chainz,
     } from "../assets";
     export const navLinks = [
     {
@@ -239,7 +242,7 @@ import {
     color: "green-text-gradient",
     },
     ],
-    image: "src/assets/chainz.png",
+    image: chainz,
     source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
     },
     {
@@ -256,7 +259,7 @@ import {
         color: "blue-text-gradient",
         },
         ],
-        image: "src/assets/CDSEE.png",
+        image: CDSEE,
         source_code_link: "https://github.com/kensho-pilkey/CDC",
     },
     {
@@ -302,7 +305,7 @@ import {
         color: "red-text-gradient",
         },
         ],
-        image: "src/assets/catBreedApp.png",
+        image: catBreedApp,
         source_code_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
         },
     ];
