@@ -58,13 +58,17 @@ const ProjectCard = ({
                 isHovered ? "opacity-100" : "opacity-0"
               }`}
               style={{
-                zIndex: isHovered ? 1 : -1,
+                zIndex: 1,
                 pointerEvents: "none",
                 objectFit: "fill", // Stretch the video to fill the container
               }}
             />
 
-            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            {/* GitHub Icon */}
+            <div
+              className="absolute inset-0 flex justify-end m-3"
+              style={{ zIndex: 2 }} // Ensure the icon is above the video
+            >
               <div
                 onClick={(e) => {
                   e.stopPropagation(); // Prevents the project link from opening
