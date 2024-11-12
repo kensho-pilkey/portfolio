@@ -54,10 +54,14 @@ const ProjectCard = ({
               muted
               loop
               playsInline
-              className={`absolute top-0 left-0 w-full h-full object-cover rounded-2xl transition-opacity duration-300 ease-in-out ${
+              className={`absolute top-0 left-0 w-full h-full rounded-2xl transition-opacity duration-300 ease-in-out ${
                 isHovered ? "opacity-100" : "opacity-0"
               }`}
-              style={{ zIndex: isHovered ? 1 : -1, pointerEvents: "none" }}
+              style={{
+                zIndex: isHovered ? 1 : -1,
+                pointerEvents: "none",
+                objectFit: "fill", // Stretch the video to fill the container
+              }}
             />
 
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
