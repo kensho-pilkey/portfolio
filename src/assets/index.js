@@ -36,6 +36,10 @@ import akari from "./akari.png";
 
 import akariVideo from "./akariVideo.mp4";
 import covidVideo from "./covidVideo.mp4";
+import brasaVideo from "./brasavideo.mp4";
+import travelVideo from "./travelVideo.mp4";
+import chainsVideo from "./chainsVideo.mp4";
+import cyberVideo from "./cyberVideo.mp4";
 
 export {
   logo,
@@ -72,4 +76,8 @@ export {
   akari,
   akariVideo,
   covidVideo,
+  brasaVideo,
+  travelVideo,
+  chainsVideo,
+  cyberVideo,
 };

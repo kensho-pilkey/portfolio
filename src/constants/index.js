@@ -29,6 +29,10 @@ import {
     akari,
     akariVideo,
     covidVideo,
+    brasaVideo,
+    travelVideo,
+    chainsVideo,
+    cyberVideo,
     } from "../assets";
     export const navLinks = [
     {
@@ -212,6 +216,7 @@ import {
     },
     ],
     image: carrent,
+    preview_video: travelVideo,
     source_code_link: "https://github.com/kensho-pilkey/Vacation-Home-Finder",
     project_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
     date: "Jul 2023",
@@ -231,6 +236,7 @@ import {
     },
     ],
     image: jobit,
+    preview_video: cyberVideo,
     source_code_link: "https://github.com/kensho-pilkey/CyberCrusade",
     project_link: "https://kenshop.itch.io/cyber-crusade/",
     date: "Mar 2024",
@@ -250,6 +256,7 @@ import {
     },
     ],
     image: chainz,
+    preview_video: chainsVideo,
     source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
     project_link: "https://kenshop.itch.io/chainsofchance",
     date: "Nov 2024",
@@ -301,6 +308,7 @@ import {
     },
     ],
     image: tripguide,
+    preview_video: brasaVideo,
     source_code_link: "https://github.com/rmharp/HackBRASADeploy",
     project_link: "https://hackbrasa.streamlit.app/",
     date: "Sep 2024",
