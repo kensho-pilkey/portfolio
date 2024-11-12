@@ -27,6 +27,8 @@ import {
     CDSEE,
     chainz,
     akari,
+    akariVideo,
+    covidVideo,
     } from "../assets";
     export const navLinks = [
     {
@@ -212,6 +214,7 @@ import {
     image: carrent,
     source_code_link: "https://github.com/kensho-pilkey/Vacation-Home-Finder",
     project_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
+    date: "Jul 2023",
     },
     {
     name: "Cyber Crusade",
@@ -230,6 +233,7 @@ import {
     image: jobit,
     source_code_link: "https://github.com/kensho-pilkey/CyberCrusade",
     project_link: "https://kenshop.itch.io/cyber-crusade/",
+    date: "Mar 2024",
     },
     {
     name: "Chains of Chance",
@@ -248,6 +252,7 @@ import {
     image: chainz,
     source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
     project_link: "https://kenshop.itch.io/chainsofchance",
+    date: "Nov 2024",
     },
     {
         name: "Disease Trend Web App",
@@ -272,8 +277,10 @@ import {
         },
         ],
         image: CDSEE,
+        preview_video: covidVideo,
         source_code_link: "https://github.com/kensho-pilkey/CDC",
         project_link: "https://cdc2024.streamlit.app/",
+        date: "Oct 2024",
     },
     {
     name: "Business Dashboard",
@@ -296,6 +303,7 @@ import {
     image: tripguide,
     source_code_link: "https://github.com/rmharp/HackBRASADeploy",
     project_link: "https://hackbrasa.streamlit.app/",
+    date: "Sep 2024",
     },
     {
         name: "Cat Breed Identifier",
@@ -322,6 +330,7 @@ import {
         image: catBreedApp,
         source_code_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
         project_link: "https://github.com/kensho-pilkey/catBreedIdentifier",
+        date: "Sep 2024",
         },
         {
         name: "Akari Light Up Game",
@@ -342,8 +351,10 @@ import {
         },
         ],
         image: akari,
+        preview_video: akariVideo,
         source_code_link: "https://github.com/kensho-pilkey/Akari",
         project_link: "https://github.com/kensho-pilkey/Akari",
+        date: "Nov 2023",
         },
     ];
     export { services, technologies, experiences, projects};

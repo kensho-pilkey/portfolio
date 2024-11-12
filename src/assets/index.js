@@ -34,6 +34,9 @@ import CDSEE from "./CDSEE.png";
 import catBreedApp from "./catBreedApp.png";
 import akari from "./akari.png";
 
+import akariVideo from "./akariVideo.mp4";
+import covidVideo from "./covidVideo.mp4";
+
 export {
   logo,
   backend,
@@ -67,4 +70,6 @@ export {
   CDSEE,
   catBreedApp,
   akari,
+  akariVideo,
+  covidVideo,
 };
