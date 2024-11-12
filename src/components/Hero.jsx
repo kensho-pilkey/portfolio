@@ -4,11 +4,11 @@ import { styles } from '../styles';
 import { AstronautCanvas } from './canvas';
 import { SectionWrapper } from "../hoc";
 import headshot from '../assets/headshot.png';
-import resume from '../assets/KPResume.pdf';
+import resume from '../assets/KPResume3.pdf';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto overflow-hidden'>
+    <section className='relative w-full h-screen mx-auto overflow-visible'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-5`}>
         <div className='flex-1 z-10'>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#0073e6]'>Kensho</span></h1>
@@ -30,7 +30,10 @@ const Hero = () => {
           <img src={headshot} alt='headshot' className='w-[350px] h-[350px] rounded-full border-4 border-blue-500 object-cover'/>
         </div>
       </div>
-      <AstronautCanvas />
+      {/* Wrap AstronautCanvas in a div with overflow-visible */}
+      <div className='overflow-visible'>
+        <AstronautCanvas />
+      </div>
     </section>
   );
 };
