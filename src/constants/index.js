@@ -34,6 +34,9 @@ import {
     expressjs,
     godot,
     cslogo,
+    python,
+    java,
+
 
     } from "../assets";
     export const navLinks = [
@@ -117,14 +120,14 @@ import {
         },
         {
             name: "Python",
-            icon: typescript,
+            icon: python,
             mastery: 3,
             time: 1,
             category: "Programming Languages",
         },
         {
             name: "Java",
-            icon: typescript,
+            icon: java,
             mastery: 3,
             time: 1,
             category: "Programming Languages",

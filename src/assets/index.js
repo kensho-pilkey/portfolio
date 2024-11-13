@@ -21,6 +21,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 import cslogo from "./tech/CSlogo.png";
+import python from "./tech/pythonlogo.png";
+import java from "./tech/javalogo.jpg";
 
 import sharry from "./company/sharry.png";
 import cryptoDrive from "./company/cryptoDrive.png";
@@ -82,4 +84,7 @@ export {
   chainsVideo,
   cyberVideo,
   cslogo,
+  python,
+  java,
+  
 };
