@@ -107,25 +107,6 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className="mt-10 flex justify-center space-x-4">
-        <select 
-          value={filter} 
-          onChange={(e) => setFilter(e.target.value)}
-          className="bg-tertiary py-2 px-4 rounded-lg outline-none border-none font-medium"
-        >
-          <option value="all">All</option>
-          <option value="Web Development">Web Development</option>
-          <option value="AI Integration">AI Integration</option>
-          <option value="Finance">Finance</option>
-        </select>
-        <button 
-          onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
-          className="bg-tertiary py-2 px-4 rounded-lg outline-none border-none font-medium"
-        >
-          {sortOrder === "asc" ? "Oldest First" : "Newest First"}
-        </button>
-      </div>
-
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           {sortedExperiences.map((experience, index) => (
