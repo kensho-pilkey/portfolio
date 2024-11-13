@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import backend from "./violin.png";
 import creator from "./cat.png";
-import mobile from "./godot.png";
+import godot from "./tech/godot.png";
 import web from "./computer.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -16,10 +16,11 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import expressjs from "./tech/expressjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
+import cslogo from "./tech/CSlogo.png";
 
 import sharry from "./company/sharry.png";
 import cryptoDrive from "./company/cryptoDrive.png";
@@ -45,7 +46,7 @@ export {
   logo,
   backend,
   creator,
-  mobile,
+  godot,
   web,
   github,
   menu,
@@ -59,7 +60,7 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
+  expressjs,
   tailwind,
   typescript,
   threejs,
@@ -80,4 +81,5 @@ export {
   travelVideo,
   chainsVideo,
   cyberVideo,
+  cslogo,
 };

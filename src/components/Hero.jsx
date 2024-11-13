@@ -38,4 +38,4 @@ const Hero = () => {
   );
 };
 
-export default SectionWrapper(Hero, "home");
+export default Hero;

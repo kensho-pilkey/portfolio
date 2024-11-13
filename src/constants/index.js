@@ -1,5 +1,4 @@
 import {
-    mobile,
     backend,
     creator,
     web,
@@ -8,7 +7,6 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
@@ -33,10 +31,14 @@ import {
     travelVideo,
     chainsVideo,
     cyberVideo,
+    expressjs,
+    godot,
+    cslogo,
+
     } from "../assets";
     export const navLinks = [
     {
-    id: "home",
+    id: "",
     title: "Home",
     },
     {
@@ -59,7 +61,7 @@ import {
     },
     {
     title: "Game Developer",
-    icon: mobile,
+    icon: godot,
     },
     {
     title: "Musician",
@@ -71,79 +73,119 @@ import {
     },
     ];
     const technologies = [
-    {
-    name: "HTML 5",
-    icon: html,
-    mastery: 5,
-    time: 4,
-    },
-    {
-    name: "CSS 3",
-    icon: css,
-    mastery: 5,
-    time: 4,
-    },
-    {
-    name: "JavaScript",
-    icon: javascript,
-    mastery: 5,
-    time: 4,
-    },
-    {
-    name: "TypeScript",
-    icon: typescript,
-    mastery: 3,
-    time: 1,
-    },
-    {
-    name: "React JS",
-    icon: reactjs,
-    mastery: 4,
-    time: 2,
-    },
-    {
-    name: "Express JS",
-    icon: redux,
-    mastery: 3,
-    time: 1,
-    },
-    {
-    name: "Tailwind CSS",
-    icon: tailwind,
-    mastery: 5,
-    time: 2,
-    },
-    {
-    name: "Node JS",
-    icon: nodejs,
-    mastery: 4,
-    time: 2,
-    },
-    {
-    name: "Three JS",
-    icon: threejs,
-    mastery: 3,
-    time: 1,
-    },
-    {
-    name: "git",
-    icon: git,
-    mastery: 5,
-    time: 6,
-    },
-    {
-    name: "figma",
-    icon: figma,
-    mastery: 4,
-    time: 2,
-    },
-    {
-    name: "docker",
-    icon: docker,
-    mastery: 4,
-    time: 2,
-    },
-    ];
+        {
+          name: "HTML 5",
+          icon: html,
+          mastery: 5,
+          time: 4,
+          category: "Frontend Tools",
+        },
+        {
+          name: "CSS 3",
+          icon: css,
+          mastery: 5,
+          time: 4,
+          category: "Frontend Tools",
+        },
+        {
+          name: "JavaScript",
+          icon: javascript,
+          mastery: 5,
+          time: 4,
+          category: "Programming Languages",
+        },
+        {
+          name: "TypeScript",
+          icon: typescript,
+          mastery: 3,
+          time: 1,
+          category: "Programming Languages",
+        },
+        {
+            name: "GDScript",
+            icon: godot,
+            mastery: 3,
+            time: 1,
+            category: "Programming Languages",
+        },
+        {
+            name: "C#",
+            icon: cslogo,
+            mastery: 3,
+            time: 1,
+            category: "Programming Languages",
+        },
+        {
+            name: "Python",
+            icon: typescript,
+            mastery: 3,
+            time: 1,
+            category: "Programming Languages",
+        },
+        {
+            name: "Java",
+            icon: typescript,
+            mastery: 3,
+            time: 1,
+            category: "Programming Languages",
+        },
+        {
+          name: "React JS",
+          icon: reactjs,
+          mastery: 4,
+          time: 2,
+          category: "Frontend Tools",
+        },
+        {
+          name: "Express JS",
+          icon: expressjs,
+          mastery: 3,
+          time: 1,
+          category: "Backend Tools",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: tailwind,
+          mastery: 5,
+          time: 2,
+          category: "Frontend Tools",
+        },
+        {
+          name: "Node JS",
+          icon: nodejs,
+          mastery: 4,
+          time: 2,
+          category: "Backend Tools",
+        },
+        {
+          name: "Three JS",
+          icon: threejs,
+          mastery: 3,
+          time: 1,
+          category: "Frontend Tools",
+        },
+        {
+          name: "git",
+          icon: git,
+          mastery: 5,
+          time: 6,
+          category: "Other",
+        },
+        {
+          name: "Figma",
+          icon: figma,
+          mastery: 4,
+          time: 2,
+          category: "Other",
+        },
+        {
+          name: "Docker",
+          icon: docker,
+          mastery: 4,
+          time: 2,
+          category: "Other",
+        },
+      ];
     const experiences = [
     {
     title: "Web Development Trainee",
