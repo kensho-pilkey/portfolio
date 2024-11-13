@@ -25,45 +25,35 @@ const ExperienceCard = ({ experience }) => {
         transition: "all 0.3s ease-in-out",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #1d1836" }}
-      date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
-      onMouseEnter={() => {
-        document.body.style.cursor = "pointer";
-      }}
-      onMouseLeave={() => {
-        document.body.style.cursor = "default";
-      }}
       onTimelineElementClick={() => {
         console.log("Card clicked!");
         setIsExpanded(!isExpanded);
       }}
-      className="hover:scale-105 transition-transform duration-300"
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
+        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <p className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
+        <p className="text-secondary text-[14px]">{experience.date}</p>
       </div>
 
       {isExpanded && (
-        <ul className='mt-5 list-disc ml-5 space-y-2'>
+        <ul className="mt-5 list-disc ml-5 space-y-2">
           {experience.points.map((point, index) => (
             <li
               key={`experience-point-${index}`}
-              className='text-white-100 text-[14px] pl-1 tracking-wider'
+              className="text-white-100 text-[14px] pl-1 tracking-wider"
             >
               {point}
             </li>
@@ -83,37 +73,28 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-  const [filter, setFilter] = useState("all");
-  const [sortOrder, setSortOrder] = useState("desc");
+  // Reintroduce sortOrder state
+  const [sortOrder] = useState("desc"); // Fixed to "desc" for descending order
 
-  const filteredExperiences = experiences.filter(exp => 
-    filter === "all" || exp.category === filter
-  );
-
-  const sortedExperiences = [...filteredExperiences].sort((a, b) => {
-    const dateA = new Date(a.date.split(" - ")[0]);
-    const dateB = new Date(b.date.split(" - ")[0]);
+  // Sort experiences from newest to oldest
+  const sortedExperiences = [...experiences].sort((a, b) => {
+    const getDate = (dateStr) => new Date(dateStr.split(" - ")[0]);
+    const dateA = getDate(a.date);
+    const dateB = getDate(b.date);
     return sortOrder === "asc" ? dateA - dateB : dateB - dateA;
   });
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience
-        </h2>
+        <p className={`${styles.sectionSubText}`}>What I have done so far</p>
+        <h2 className={`${styles.sectionHeadText}`}>Work Experience</h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+      <div className="mt-20 flex flex-col">
+        <VerticalTimeline layout="1-column-left">
           {sortedExperiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+            <ExperienceCard key={`experience-${index}`} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
@@ -121,4 +102,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");

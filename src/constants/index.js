@@ -40,6 +40,10 @@ import {
     title: "Home",
     },
     {
+    id: "experience",
+    title: "Experience",
+    },
+    {
     id: "projects",
     title: "Projects",
     },
@@ -160,7 +164,7 @@ import {
     company_name: "Maxam Hotels",
     icon: maxam,
     iconBg: "#E6DEDD",
-    date: "May 2024 - Jun 2024",
+    date: "Jan 2024 - Jun 2024",
     points: [
     "Developed the backend for a chatbot using FastAPI and GPT-4o API, designed to answer customer queries with real-time, context-aware responses.",
     "Integrated a PostgreSQL database using SQLAlchemy to store over 1,000 Q&A entries.",
