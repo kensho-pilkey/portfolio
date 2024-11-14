@@ -1,3 +1,4 @@
 # My Portfolio Page
 
-Built with React, Threejs, React-three-fiber, and Tailwind CSS.
+- Built with React, Threejs, React-three-fiber, and Tailwind CSS.
+- Showcases my personal projects and work experience. 
