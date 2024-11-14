@@ -12,6 +12,7 @@ const App = () => {
           <Hero />
           <StarsCanvas />
         </div>
+        <About />
         <Experience />
         <Works />
         <Tech />

@@ -21,8 +21,7 @@ const Contact = () => {
       <h3 className={styles.sectionHeadText}>Contact</h3>
 
       <div className="mt-12">
-        <motion.div
-          variants={slideIn("up", "tween", 0.2, 1)}
+        <div
           className="bg-black-100 p-8 rounded-2xl"
         >
           <div className="flex flex-col md:flex-row md:justify-between md:gap-8 gap-10">
@@ -89,7 +88,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );
