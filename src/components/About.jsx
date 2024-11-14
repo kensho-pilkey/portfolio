@@ -14,12 +14,13 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>About Me</h2>
 
       <div
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mb-12'
       >
         Hello! I'm a passionate undergraduate student studying Computer Science, Statistics, and Entrepreneurship, with a strong interest in Computer Vision and Game Development. 
 
         I'm eager to connect with like-minded professionals and explore opportunities where I can contribute my skills while continuing to learn and evolve in the field of technology and entrepreneurship.
       </div>
+      <Tech />
     </>
   );
 };

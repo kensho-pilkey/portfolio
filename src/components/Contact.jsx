@@ -17,7 +17,6 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   return (
     <>
-      <span className={styles.sectionSubText}>Get in touch</span>
       <h3 className={styles.sectionHeadText}>Contact</h3>
 
       <div className="mt-12">
