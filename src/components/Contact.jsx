@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaTwitter,
+  FaYoutube,
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
@@ -26,67 +27,68 @@ const Contact = () => {
         >
           <div className="flex flex-col md:flex-row md:justify-between md:gap-8 gap-10">
             {/* Left Side: Contact Information */}
-            <div className="flex-1">
-              <h4 className="text-white font-medium text-[18px] mb-4">
+            <div className="flex flex-col md:w-1/2">
+              <h4 className="text-white font-medium text-[26px] mb-4 text-center md:text-left">
                 Connect with Me
               </h4>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-4">
-                  <FaEnvelope className="text-white text-[24px]" />
+                  <FaEnvelope className="text-white text-[30px] min-w-[30px]" />
                   <p className="text-secondary">pilkeykensho@gmail.com</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <FaPhoneAlt className="text-white text-[24px]" />
+                  <FaPhoneAlt className="text-white text-[30px] min-w-[30px]" />
                   <p className="text-secondary">+1 (910) 593-2679</p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <FaMapMarkerAlt className="text-white text-[24px]" />
+                  <FaMapMarkerAlt className="text-white text-[30px] min-w-[30px]" />
                   <p className="text-secondary">Chapel Hill, NC</p>
                 </div>
               </div>
             </div>
 
-            {/* Right Side: Social Links */}
-            <div className="flex-1">
-              <h4 className="text-white font-medium text-[18px] mb-4">
-                Follow Me
-              </h4>
-              <div className="flex flex-col gap-4">
+            {/* Right Side: Message and Social Icons */}
+            <div className="flex flex-col items-center md:w-1/2">
+              <p className="text-secondary text-center mb-4">
+                Feel free to reach out through any of these channels. I'm always
+                excited to connect!
+              </p>
+              <div className="flex items-center justify-center gap-6 mt-4">
                 <a
                   href="https://github.com/kensho-pilkey"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300"
+                  className="text-secondary hover:text-white transition-colors duration-300"
                 >
-                  <FaGithub className="text-[24px]" />
-                  <span>GitHub</span>
+                  <FaGithub className="text-[50px]" />
                 </a>
                 <a
                   href="https://linkedin.com/in/kensho-pilkey"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300"
+                  className="text-secondary hover:text-white transition-colors duration-300"
                 >
-                  <FaLinkedin className="text-[24px]" />
-                  <span>LinkedIn</span>
+                  <FaLinkedin className="text-[50px]" />
                 </a>
                 <a
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-secondary hover:text-white transition-colors duration-300"
+                  className="text-secondary hover:text-white transition-colors duration-300"
                 >
-                  <FaTwitter className="text-[24px]" />
-                  <span>Twitter</span>
+                  <FaTwitter className="text-[50px]" />
+                </a>
+                <a
+                  href="https://www.youtube.com/yourchannel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-secondary hover:text-white transition-colors duration-300"
+                >
+                  <FaYoutube className="text-[50px]" />
                 </a>
               </div>
             </div>
           </div>
-
-          <p className="text-secondary mt-8">
-            Feel free to reach out through any of these channels. I'm always
-            excited to connect!
-          </p>
         </motion.div>
       </div>
     </>
