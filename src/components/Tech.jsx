@@ -34,7 +34,7 @@ const Tech = () => {
               <h3 className="text-white text-2xl font-bold mb-6">
                 {categoryName}
               </h3>
-              <div className="flex flex-row flex-wrap justify-center gap-8">
+              <div className="grid grid-cols-5 gap-8">
                 {categories[categoryName] &&
                   categories[categoryName].map((technology) => (
                     <div

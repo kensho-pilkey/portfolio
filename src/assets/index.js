@@ -23,6 +23,14 @@ import threejs from "./tech/threejs.png";
 import cslogo from "./tech/CSlogo.png";
 import python from "./tech/pythonlogo.png";
 import java from "./tech/javalogo.jpg";
+import vue from "./tech/vuelogo.png";
+import angular from "./tech/angular.png";
+import bootstrap from "./tech/bootstrap.png";
+import fastapi from "./tech/fastapi.png";
+import postgresql from "./tech/postgresql.png";
+import sqlalchemy from "./tech/sqlalchemy.png";
+import flask from "./tech/flask.png";
+import sqlite from "./tech/sqlite.png";
 
 import sharry from "./company/sharry.png";
 import cryptoDrive from "./company/cryptoDrive.png";
@@ -86,5 +94,12 @@ export {
   cslogo,
   python,
   java,
-  
+  vue,
+  angular,
+  bootstrap,
+  fastapi,
+  postgresql,
+  sqlalchemy,
+  flask,
+  sqlite,
 };
