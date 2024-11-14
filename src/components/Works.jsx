@@ -27,12 +27,7 @@ const ProjectCard = ({
         className="cursor-pointer"
         onClick={() => window.open(project_link, "_blank")}
       >
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
+        <div
           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -98,7 +93,7 @@ const ProjectCard = ({
               </p>
             ))}
           </div>
-        </Tilt>
+        </div>
       </div>
     </motion.div>
   );
