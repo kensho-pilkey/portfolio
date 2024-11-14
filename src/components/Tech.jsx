@@ -25,9 +25,7 @@ const Tech = () => {
 
   return (
     <>
-      <span className={styles.sectionSubText}>Proficient</span>
-      <h3 className={styles.sectionHeadText}>Technologies</h3>
-      <div className="flex flex-col gap-10 mt-12">
+      <div className="flex flex-col gap-10">
         {orderedCategories.map((row, rowIndex) => (
           <div key={rowIndex} className="flex flex-col md:flex-row gap-10">
             {row.map((categoryName) => (
