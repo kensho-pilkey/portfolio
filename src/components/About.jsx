@@ -16,9 +16,11 @@ const About = () => {
       <div
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mb-12'
       >
-        Hello! I'm a passionate undergraduate student studying Computer Science, Statistics, and Entrepreneurship, with a strong interest in Computer Vision and Game Development. 
+        Hello! I'm a passionate undergraduate student studying Computer Science and Entrepreneurship, with a strong interest in Computer Vision and Game Development.
 
-        I'm eager to connect with like-minded professionals and explore opportunities where I can contribute my skills while continuing to learn and evolve in the field of technology and entrepreneurship.
+        In short, I'm fascinated by cutting-edge technology and love exploring its possibilities. I'm currently seeking a full-time software engineering role where I can apply my skills and learn by solving complex problems.
+
+
       </div>
       <Tech />
     </>
