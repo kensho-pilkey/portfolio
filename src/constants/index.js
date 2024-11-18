@@ -350,7 +350,7 @@ import {
     {
     name: "Chains of Chance",
     description:
-    "Strategic one vs one card game that involves deception, chance, and a unique deck of cards. Entry to the Fall 2024 UNC Game Jam. (Waiting on placements)",
+    "1st Place entry - 2024 UNC Collegiate Fall Game Jam. Strategic one vs one card game that involves deception, chance, and a unique deck of cards.",
     tags: [
     {
     name: "C# & .NET",
