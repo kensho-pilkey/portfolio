@@ -44,6 +44,10 @@ import {
     sqlalchemy,
     flask,
     sqlite,
+    simpleHabit,
+    simpleHabitVideo,
+    openHours,
+    openHoursVideo,
 
 
     } from "../assets";
@@ -303,123 +307,175 @@ import {
     ];
     
     const projects = [
-    {
-    name: "Vacation Home Finder",
-    description:
-    "A vacation home finding platform that offers curated recommendations for popular destinations based on filters and user preferences.",
-    tags: [
-    {
-    name: "HTML",
-    color: "blue-text-gradient",
-    },
-    {
-    name: "Javascript",
-    color: "green-text-gradient",
-    },
-    {
-    name: "Bootstrap CSS",
-    color: "pink-text-gradient",
-    },
-    ],
-    image: carrent,
-    preview_video: travelVideo,
-    source_code_link: "https://github.com/kensho-pilkey/Vacation-Home-Finder",
-    project_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
-    date: "Jul 2023",
-    },
-    {
-    name: "Cyber Crusade",
-    description:
-    "Save your computer from a vicious computer virus in this thrilling 2D platoformer style game. Features a tutorial, 4 different levels, and a final boss fight.",
-    tags: [
-    {
-    name: "Gdscript",
-    color: "blue-text-gradient",
-    },
-    {
-    name: "Godot Engine",
-    color: "green-text-gradient",
-    },
-    ],
-    image: jobit,
-    preview_video: cyberVideo,
-    source_code_link: "https://github.com/kensho-pilkey/CyberCrusade",
-    project_link: "https://kenshop.itch.io/cyber-crusade/",
-    date: "Mar 2024",
-    },
-    {
-    name: "Chains of Chance",
-    description:
-    "1st Place entry - 2024 UNC Collegiate Fall Game Jam. Strategic one vs one card game that involves deception, chance, and a unique deck of cards.",
-    tags: [
-    {
-    name: "C# & .NET",
-    color: "blue-text-gradient",
-    },
-    {
-    name: "Godot Engine",
-    color: "green-text-gradient",
-    },
-    ],
-    image: chainz,
-    preview_video: chainsVideo,
-    source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
-    project_link: "https://kenshop.itch.io/chainsofchance",
-    date: "Nov 2024",
-    },
-    {
-        name: "Disease Trend Web App",
+      {
+        name: "Habit Tracker Web App",
         description:
-        "1st Place - 2024 Carolina Data Challenge Health Science track. This application provides insights into airborne disease trends across the United States from 2020 to 2023.",
+        "A 365 day habit tracking web app that allows users to visualize multiple habits, daily streaks, and other stats in a Github-like progress grid.",
         tags: [
         {
-        name: "Python",
-        color: "green-text-gradient",
-        },
-        {
-        name: "Streamlit",
+        name: "React",
         color: "blue-text-gradient",
         },
         {
-        name: "Numpy",
-        color: "pink-text-gradient",
+        name: "Javascript",
+        color: "green-text-gradient",
         },
         {
-        name: "Plotly",
-        color: "red-text-gradient",
+        name: "Vanilla CSS",
+        color: "pink-text-gradient",
         },
         ],
-        image: CDSEE,
-        preview_video: covidVideo,
-        source_code_link: "https://github.com/kensho-pilkey/CDC",
-        project_link: "https://cdc2024.streamlit.app/",
-        date: "Oct 2024",
-    },
-    {
-    name: "Business Dashboard",
-    description:
-    "Displays several KPI's via numbers and graphs. Entry to the BRASA-Hack 2024 Hackathon. (For LiveDemo Username: 9132021237731236867 Password: stoneco)",
-    tags: [
-    {
-    name: "css",
-    color: "blue-text-gradient",
-    },
-    {
-    name: "python",
-    color: "green-text-gradient",
-    },
-    {
-    name: "streamlit",
-    color: "pink-text-gradient",
-    },
-    ],
-    image: tripguide,
-    preview_video: brasaVideo,
-    source_code_link: "https://github.com/rmharp/HackBRASADeploy",
-    project_link: "https://hackbrasa.streamlit.app/",
-    date: "Sep 2024",
-    },
-    {
+        image: simpleHabit,
+        preview_video: simpleHabitVideo,
+        source_code_link: "https://github.com/kensho-pilkey/habit-tracker",
+        project_link: "https://kensho-pilkey.github.io/habit-tracker/",
+        date: "Feb 2025",
+        },
+        {
+          name: "Open Hours Editor",
+          description:
+          "Contributed to university's open-source CSXL website codebase by adding an admin panel to streamline add/edit/delete functionality for operating hours.",
+          tags: [
+          {
+          name: "Angular & TS",
+          color: "blue-text-gradient",
+          },
+          {
+          name: "Python",
+          color: "green-text-gradient",
+          },
+          {
+            name: "MySQL",
+            color: "white",
+          },
+          {
+            name: "SQLAlchemy",
+            color: "pink-text-gradient",
+          },
+          ],
+          image: openHours,
+          preview_video: openHoursVideo,
+          source_code_link: "https://github.com/comp423-24f/csxl-team-b6",
+          project_link: "https://github.com/comp423-24f/csxl-team-b6",
+          date: "Aug - Dec 2024",
+          },
+      {
+      name: "Vacation Home Finder",
+      description:
+      "A vacation home finding platform that offers curated recommendations for popular destinations based on filters and user preferences.",
+      tags: [
+      {
+      name: "HTML",
+      color: "blue-text-gradient",
+      },
+      {
+      name: "Javascript",
+      color: "green-text-gradient",
+      },
+      {
+      name: "Bootstrap CSS",
+      color: "pink-text-gradient",
+      },
+      ],
+      image: carrent,
+      preview_video: travelVideo,
+      source_code_link: "https://github.com/kensho-pilkey/Vacation-Home-Finder",
+      project_link: "https://kensho-pilkey.github.io/Vacation-Home-Finder/",
+      date: "Jul 2023",
+      },
+      {
+      name: "Cyber Crusade",
+      description:
+      "Save your computer from a vicious computer virus in this thrilling 2D platoformer style game. Features a tutorial, 4 different levels, and a final boss fight.",
+      tags: [
+      {
+      name: "Gdscript",
+      color: "blue-text-gradient",
+      },
+      {
+      name: "Godot Engine",
+      color: "green-text-gradient",
+      },
+      ],
+      image: jobit,
+      preview_video: cyberVideo,
+      source_code_link: "https://github.com/kensho-pilkey/CyberCrusade",
+      project_link: "https://kenshop.itch.io/cyber-crusade/",
+      date: "Mar 2024",
+      },
+      {
+      name: "Chains of Chance",
+      description:
+      "1st Place entry - 2024 UNC Collegiate Fall Game Jam. Strategic one vs one card game that involves deception, chance, and a unique deck of cards.",
+      tags: [
+      {
+      name: "C# & .NET",
+      color: "blue-text-gradient",
+      },
+      {
+      name: "Godot Engine",
+      color: "green-text-gradient",
+      },
+      ],
+      image: chainz,
+      preview_video: chainsVideo,
+      source_code_link: "https://github.com/kensho-pilkey/Chains-of-Chance",
+      project_link: "https://kenshop.itch.io/chainsofchance",
+      date: "Nov 2024",
+      },
+      {
+          name: "Disease Trend Web App",
+          description:
+          "1st Place - 2024 Carolina Data Challenge Health Science track. This application provides insights into airborne disease trends across the United States from 2020 to 2023.",
+          tags: [
+          {
+          name: "Python",
+          color: "green-text-gradient",
+          },
+          {
+          name: "Streamlit",
+          color: "blue-text-gradient",
+          },
+          {
+          name: "Numpy",
+          color: "pink-text-gradient",
+          },
+          {
+          name: "Plotly",
+          color: "red-text-gradient",
+          },
+          ],
+          image: CDSEE,
+          preview_video: covidVideo,
+          source_code_link: "https://github.com/kensho-pilkey/CDC",
+          project_link: "https://cdc2024.streamlit.app/",
+          date: "Oct 2024",
+      },
+      {
+      name: "Business Dashboard",
+      description:
+      "Displays several KPI's via numbers and graphs. Entry to the BRASA-Hack 2024 Hackathon. (For LiveDemo Username: 9132021237731236867 Password: stoneco)",
+      tags: [
+      {
+      name: "css",
+      color: "blue-text-gradient",
+      },
+      {
+      name: "python",
+      color: "green-text-gradient",
+      },
+      {
+      name: "streamlit",
+      color: "pink-text-gradient",
+      },
+      ],
+      image: tripguide,
+      preview_video: brasaVideo,
+      source_code_link: "https://github.com/rmharp/HackBRASADeploy",
+      project_link: "https://hackbrasa.streamlit.app/",
+      date: "Sep 2024",
+      },
+      {
         name: "Cat Breed Identifier",
         description:
         "A computer vision Python application that identifies cats and their breed within a photo or live video. Fine tuned ResNet50 on a dataset of 7,000 labeled cat breeds.",

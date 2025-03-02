@@ -44,6 +44,8 @@ import chainz from "./chainz.png";
 import CDSEE from "./CDSEE.png";
 import catBreedApp from "./catBreedApp.png";
 import akari from "./akari.png";
+import simpleHabit from "./simpleHabit.png";
+import openHours from "./openHours.png"
 
 import akariVideo from "./akariVideo.mp4";
 import covidVideo from "./covidVideo.mp4";
@@ -51,6 +53,8 @@ import brasaVideo from "./brasaVideo.mp4";
 import travelVideo from "./travelVideo.mp4";
 import chainsVideo from "./chainsVideo.mp4";
 import cyberVideo from "./cyberVideo.mp4";
+import simpleHabitVideo from "./theSimpleHabit.mp4";
+import openHoursVideo from "./openHours.mp4";
 
 export {
   logo,
@@ -102,4 +106,8 @@ export {
   sqlalchemy,
   flask,
   sqlite,
+  simpleHabit,
+  simpleHabitVideo,
+  openHours,
+  openHoursVideo,
 };
