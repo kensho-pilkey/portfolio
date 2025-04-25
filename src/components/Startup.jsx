@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -6,6 +6,73 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const Startup = () => {
+  const timelineItems = [
+    {
+      date: "Dec 2024",
+      title: "Web Frontend",
+      description: "Built React UI with responsive design for desktop and mobile. Implemented card viewing and collection features.",
+      status: "completed",
+      emoji: "✅"
+    },
+    {
+      date: "Jan 2025",
+      title: "FastApi Backend",
+      description: "Implemented database schema, API endpoints, and JWT authentication system with role-based access control.",
+      status: "completed",
+      emoji: "✅"
+    },
+    {
+      date: "Feb 2025",
+      title: "Web App Launch",
+      description: "Deployed MVP with core features and initial database of 10,000+ trading cards across multiple TCG platforms.",
+      status: "completed",
+      emoji: "✅"
+    },
+    {
+      date: "Mar 2025",
+      title: "Mobile App Frontend",
+      description: "Developing Swift UI components and collection management screens with real-time synchronization to web platform.",
+      status: "in-progress",
+      emoji: "⏳"
+    },
+    {
+      date: "Apr 2025",
+      title: "Train CV Model",
+      description: "Training YoloV8n seg model on synthetic dataset of 20k+ composite card images to segment pokemon cards at the pixel level.",
+      status: "completed",
+      emoji: "✅"
+    },
+    {
+        date: "Apr 2025",
+        title: "Mobile Card Scan",
+        description: "Export tuned Yolov8 model to CoreML and incorporate in Swift app for single and multiscan functionality.",
+        status: "in-progress",
+        emoji: "⏳"
+      },
+    {
+      date: "Apr 2025",
+      title: "Card Hashing Algo",
+      description: "Optimizing perceptual hash generation for high volume image comparison to detect counterfeits and card condition.",
+      status: "roadblock",
+      emoji: "🚧"
+    },
+  ];
+
+  // State to track which item is selected (default to first item)
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const statusColors = {
+    completed: "bg-green-500/20",
+    "in-progress": "bg-yellow-500/20",
+    roadblock: "bg-red-500/20"
+  };
+
+  const statusBorderColors = {
+    completed: "border-green-500",
+    "in-progress": "border-yellow-500",
+    roadblock: "border-red-500"
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -68,73 +135,63 @@ const Startup = () => {
           <div className="min-w-[768px]">
             {/* Timeline Line */}
             <div className="relative flex items-center justify-between">
+              {/* Horizontal line */}
               <div className="absolute left-0 right-0 h-1 bg-blue-500/30 rounded-full"></div>
               
-              {/* Dec 2024 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-green-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">✅</span>
+              {/* Timeline Items */}
+              {timelineItems.map((item, index) => (
+                <div 
+                  key={index} 
+                  className="relative flex flex-col items-center z-10"
+                >
+                  {/* Circle with emoji */}
+                  <button
+                    onClick={() => setSelectedIndex(index)}
+                    className={`
+                      h-12 w-12 ${statusColors[item.status]} rounded-full 
+                      flex items-center justify-center mb-2 cursor-pointer
+                      transition-all duration-300
+                      ${selectedIndex === index ? `ring-2 ring-offset-2 ring-offset-gray-900 ${statusBorderColors[item.status]}` : ''}
+                    `}
+                    aria-label={`View details for ${item.title}`}
+                  >
+                    <span className="text-xl">{item.emoji}</span>
+                  </button>
+                  
+                  {/* Date */}
+                  <p className={`font-medium text-sm ${selectedIndex === index ? 'text-gradient font-bold' : 'text-secondary'}`}>
+                    {item.date}
+                  </p>
+                  
+                  {/* Title - UPDATED: using flex layout with min-width and no ellipsis */}
+                  <p className={`text-sm mt-1 text-center min-w-[120px] whitespace-nowrap overflow-hidden ${selectedIndex === index ? 'text-white font-bold' : 'text-secondary'}`}>
+                    {item.title}
+                  </p>
                 </div>
-                <p className="font-medium text-gradient text-sm">Dec 2024</p>
-                <p className="font-bold text-white text-sm mt-1">Project Inception</p>
+              ))}
+            </div>
+            
+            {/* Info Box for Selected Item */}
+            <div className="mt-12 bg-gray-800 border border-blue-500/30 rounded-lg p-4 shadow-lg">
+              <div className="flex items-center mb-2">
+                <span className="text-xl mr-2">{timelineItems[selectedIndex].emoji}</span>
+                <h4 className="text-white font-bold">{timelineItems[selectedIndex].title} - {timelineItems[selectedIndex].date}</h4>
               </div>
-              
-              {/* Jan 2025 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-green-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">✅</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">Jan 2025</p>
-                <p className="font-bold text-white text-sm mt-1">Backend Development</p>
-              </div>
-              
-              {/* Feb 2025 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-green-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">✅</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">Feb 2025</p>
-                <p className="font-bold text-white text-sm mt-1">Web App Launch</p>
-              </div>
-              
-              {/* Mar 2025 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-yellow-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">⏳</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">Mar 2025</p>
-                <p className="font-bold text-white text-sm mt-1">Mobile App Frontend</p>
-              </div>
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-red-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">🚧</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">Mar 2025</p>
-                <p className="font-bold text-white text-sm mt-1">Historic Price Data</p>
-              </div>
-              
-              {/* Apr 2025 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-yellow-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">⏳</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">Apr 2025</p>
-                <p className="font-bold text-white text-sm mt-1">CV Models</p>
-              </div>
-              
-              {/* May 2025 */}
-              <div className="relative flex flex-col items-center z-10">
-                <div className="h-10 w-10 bg-red-500/20 rounded-full flex items-center justify-center mb-2">
-                  <span className="text-xl">🚧</span>
-                </div>
-                <p className="font-medium text-gradient text-sm">May 2025</p>
-                <p className="font-bold text-white text-sm mt-1">Card Hashing Algo</p>
+              <p className="text-secondary">
+                {timelineItems[selectedIndex].description}
+              </p>
+              <div className="mt-2 text-xs text-blue-400">
+                Status: {selectedIndex !== null && (
+                  timelineItems[selectedIndex].status === "completed" ? "Completed" :
+                  timelineItems[selectedIndex].status === "in-progress" ? "In Progress" :
+                  "Facing Challenges"
+                )}
               </div>
             </div>
           </div>
           
           {/* Legend */}
-          <div className="flex justify-end gap-4 mt-8 text-sm text-secondary">
+          <div className="flex justify-end gap-4 mt-4 text-sm text-secondary">
             <div className="flex items-center gap-1">
               <span className="text-green-400">✅</span> Completed
             </div>
