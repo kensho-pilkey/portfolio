@@ -24,7 +24,7 @@ const Startup = () => {
     {
       date: "Feb 2025",
       title: "Web App Launch",
-      description: "Deployed MVP with core features and initial database of 10,000+ trading cards across multiple TCG platforms.",
+      description: "Deployed MVP with core features and initial database of 10,000+ pokemon cards across multiple TCG series.",
       status: "completed",
       emoji: "✅"
     },
@@ -85,8 +85,8 @@ const Startup = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         As the Founder and Lead Developer of TCGenie AI since December 2024, 
-        I've built a comprehensive platform for TCG enthusiasts to track and 
-        manage their card collections.
+        I'm actively developing a platform for TCG enthusiasts to track, 
+        manage, and grade their card collections using the power of computer vision.
       </motion.p>
 
       <div className="mt-12 flex flex-wrap gap-8">
@@ -94,7 +94,7 @@ const Startup = () => {
           variants={fadeIn("right", "spring", 0.1, 0.75)}
           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         >
-          <h3 className="text-white font-bold text-[24px]">Full Stack Development</h3>
+          <h3 className="text-white font-bold text-[24px]">Web Application</h3>
           <p className="mt-2 text-secondary text-[16px]">
             Built a React JS web application enabling users to view TCG cards,
             access price data, and calculate total card portfolio value.
