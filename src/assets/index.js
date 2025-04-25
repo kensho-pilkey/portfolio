@@ -36,6 +36,7 @@ import sharry from "./company/sharry.png";
 import cryptoDrive from "./company/cryptoDrive.png";
 import global_tech from "./company/global_tech.png";
 import maxam from "./company/maxam.png";
+import tcgenie from "./company/tcgenie.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -110,4 +111,5 @@ export {
   simpleHabitVideo,
   openHours,
   openHoursVideo,
+  tcgenie
 };

@@ -48,6 +48,8 @@ import {
     simpleHabitVideo,
     openHours,
     openHoursVideo,
+    tcgenie,
+
 
 
     } from "../assets";
@@ -292,17 +294,17 @@ import {
     category: "Frontend",
     },
     {
-    title: "Full-Stack Developer Contract",
+    title: "Frontend Developer Contract",
     company_name: "Sharry Tech",
     icon: sharry,
     iconBg: "#E6DEDD",
-    date: "Oct 2024 - Present",
+    date: "Sep 2024 - Mar 2025",
     points: [
-    "Improved the UI and functionality of the App Builder project that I worked on as an intern.",
-    "Developed a Python backend, using PostgreSQL, FastAPI, and SQLAlchemy, that allows clients to send their design directly to the delivery team.",
+    "Improved the UI and functionality of Sharry’s App Builder, giving users more customization and features.",
+    "Optimized the Vue.js application to load 30% faster and work on mobile devices.",
     "Reduced client-delivery team communication time from weeks to minutes.",
     ],
-    category: "Backend",
+    category: "Frontend",
     },
     ];
     
